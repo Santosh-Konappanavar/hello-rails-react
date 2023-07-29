@@ -1,0 +1,9 @@
+{
+    "entrypoints": {
+      "application": {
+        "js": "/packs/application.js",
+        "css": "/packs/application.css"
+      }
+    }
+  }
+  
