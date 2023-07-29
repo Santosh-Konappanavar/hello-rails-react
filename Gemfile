@@ -63,4 +63,14 @@ group :test do
   gem 'webdrivers'
 end
 
+group :development, :production do
+  gem 'rack-cors', require: 'rack/cors'
+end
+
 gem 'jsbundling-rails'
+
+gem 'webpacker', '~> 5.4'
+
+gem 'faker'
+
+gem 'react-rails'

@@ -1,4 +1,4 @@
-class ApplicationController < ActionController::API
+class ApplicationController < ActionController::Base
   before_action :set_cors_headers
 
   def set_cors_headers

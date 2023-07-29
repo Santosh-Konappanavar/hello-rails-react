@@ -1,12 +1,19 @@
-import React from 'react';
-import Greeting from './Greeting';
+import React from "react";
+import Greetings from "./Greetings";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "../redux/store";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Greeting />
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Greetings />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   );
-}
+};
 
 export default App;
